@@ -18,6 +18,6 @@ public class PokerTest extends TestCase {
 
    // test method to add two values
    public void testManualPlay(){
-      
+      // Manually set the hand of cards: AS, 10C, 10H, 3D, 3S
    }
 }
