@@ -9,7 +9,18 @@ package poker;
  *
  * @author hp
  */
-public interface IHand 
+public class Pair extends Hand implements IHand 
 {
-    public boolean drawHand();
+
+    public Pair(String s) 
+    {
+        super(s);
+    }
+
+    @Override
+    public boolean drawHand() 
+    {
+        return this.pair();
+    }
+    
 }

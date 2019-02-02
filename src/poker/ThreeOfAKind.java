@@ -9,7 +9,17 @@ package poker;
  *
  * @author hp
  */
-public interface IHand 
-{
-    public boolean drawHand();
+public class ThreeOfAKind extends Hand implements IHand {
+
+    public ThreeOfAKind(String s) 
+    {
+        super(s);
+    }
+
+    @Override
+    public boolean drawHand() 
+    {
+        return this.threeOfAKind();
+    }
+    
 }

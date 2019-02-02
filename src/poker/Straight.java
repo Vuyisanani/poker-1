@@ -9,7 +9,17 @@ package poker;
  *
  * @author hp
  */
-public interface IHand 
-{
-    public boolean drawHand();
+public class Straight extends Hand implements IHand {
+
+    public Straight(String s) 
+    {
+        super(s);
+    }
+
+    @Override
+    public boolean drawHand() 
+    {
+        return this.straight();
+    }
+    
 }
